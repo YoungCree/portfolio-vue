@@ -1,33 +1,22 @@
 <template>
   <div id="app">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <md-toolbar class="md-transparent" md-elevation="0">
+      <h3 class="md-title" style="flex: 1">Corey's Portfolio</h3>
+      <router-link to="/"><md-button class="nav-btn">Home</md-button></router-link>
+      <router-link to="/about"><md-button class="nav-btn">About</md-button></router-link>
+    </md-toolbar>
     <router-view/>
   </div>
 </template>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: Roboto;
 }
 
-#nav {
-  padding: 30px;
+.nav-btn a {
+  color: white !important;
+  text-decoration: none !important;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
